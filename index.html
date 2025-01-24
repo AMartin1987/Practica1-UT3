@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>PRACTICA1-UT3</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container-header">
+            <img src="img\Capsule_Corp_Logo.svg" alt="Capsule Corporation Logo" id="logo">
+            <h1>PRACTICA1-UT3</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex-container-main">
+            <div class="flex-container-form">
+                <h2 class="">Introduce los datos</h2><br><br>
+                <form action="/submit" method="POST">
+                    <label for="nombre">Nombre:</label><br><br>
+                    <input type="text" id="nombre" name="nombre" required autofocus
+                        placeholder="Dirección de correo electrónico"><br><br>
+                    <label for="contrasseña">Contraseña:</label><br><br>
+                    <input type="password" id="contraseña" name="contraseña" required><br><br>
+                    <label for="telefono">Teléfono:</label><br><br>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}"><br><br>
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label><br><br>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br><br>
+                    <div class="tooltip">
+                        <input type="submit" formaction="/" value="Dar de alta" id="boton-envio"><br><br>
+                        <div class="tooltip-text">¡Entra y descubre!</div>
+                    </div>
+                    <input type="checkbox" id="recordarContraseña" name="recordarContraseña">
+                    <label for="recordarContraseña">Recordar contraseña</label><br><br>
+                </form>
+            </div>
+            <div class="flex-container-text">
+                <h2>Lorem ipsum</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida scelerisque erat, vel fermentum
+                    justo. Nulla eu lorem ex. Maecenas ac elementum ex, ut scelerisque metus. In hac habitasse platea
+                    dictumst.
+                    Morbi ligula neque, condimentum in lacinia non, vestibulum quis nisi. Mauris ac consequat nulla, non
+                    consequat nibh. Integer nisi risus, commodo quis auctor eleifend, viverra vitae lacus. Ut ipsum
+                    metus,
+                    pharetra quis nibh in, tincidunt vulputate ligula. Cras vehicula rhoncus elementum. Phasellus nec
+                    urna nec
+                    eros volutpat ornare.</p>
+
+                <p>Maecenas nec interdum eros, nec elementum urna. Aliquam libero libero, feugiat ac porta a, pulvinar
+                    ut arcu.
+                    Proin quis cursus justo. Proin efficitur quam justo, vel tempor ipsum lobortis et. Aliquam erat
+                    volutpat.
+                    Pellentesque molestie tortor consequat, dapibus nunc et, sagittis nunc. Mauris turpis ex, mollis non
+                    nisi
+                    ut, posuere ornare ante. Morbi ullamcorper gravida sodales. Morbi vitae sodales erat. Nunc vel
+                    egestas diam.</p>
+
+                <p>Morbi ultricies sollicitudin ullamcorper. Maecenas vel erat quis odio feugiat fringilla a sit amet
+                    justo.
+                    Donec vel consectetur justo. Pellentesque vehicula, erat at euismod volutpat, leo ante sagittis
+                    nisi, in
+                    consequat lacus purus eget neque. Cras velit orci, dictum vitae dapibus vel, imperdiet eu diam. In
+                    sagittis
+                    ut dui ac pharetra. Sed tincidunt sem eget nisi viverra, ut accumsan dolor efficitur. Mauris lorem
+                    nulla,
+                    tempus vel tincidunt ut, semper ac urna. Aenean gravida enim quis neque dapibus, nec accumsan nisl
+                    tincidunt. Mauris ultrices maximus urna, sit amet semper elit porta id. Mauris dui neque,
+                    ullamcorper at
+                    massa id, placerat suscipit metus. Mauris finibus ultrices ligula, a lacinia arcu faucibus non.
+                    Curabitur
+                    accumsan erat a sapien rutrum, at tincidunt ex pellentesque. Quisque venenatis diam ac sem euismod,
+                    in
+                    posuere tellus aliquet. In semper iaculis massa. Etiam luctus, sapien placerat imperdiet imperdiet,
+                    felis
+                    urna ullamcorper erat, non ultricies orci tortor eu tortor.</p>
+
+                <p>Sed viverra nunc rutrum leo rhoncus mollis. Ut nec velit vitae quam rutrum semper tempor a leo.
+                    Pellentesque
+                    sagittis accumsan erat eu iaculis. Etiam nec nunc vitae massa bibendum auctor. Pellentesque
+                    ullamcorper odio
+                    vitae sem lacinia, vitae consequat sem feugiat. Donec ac turpis consequat, mollis nisl tincidunt,
+                    sagittis
+                    nisi. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Proin eu est nunc.</p>
+
+                <p>Nunc in malesuada nibh. Sed bibendum justo urna, quis varius lectus consectetur vitae. Mauris porta
+                    est at
+                    neque volutpat euismod. Suspendisse et ipsum rhoncus, aliquam nulla in, tempus purus. Nullam feugiat
+                    rutrum
+                    ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In
+                    pretium
+                    semper urna ac porta.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex-container-footer">
+            <h3> © Alejandra Martín 2024</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
