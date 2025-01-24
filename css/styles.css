@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(112, 189, 112);
+    font-size: 3em;
+}
+
+h2 {
+    color: rgb(15, 97, 204);
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddcb34t-b8c627c6-b2a8-4c1b-a3a2-0e7816e274e8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGRjYjM0dC1iOGM2MjdjNi1iMmE4LTRjMWItYTNhMi0wZTc4MTZlMjc0ZTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XFqpO_px8j5jh4fQ0UAUcY4wsYJ7cY4kDgn-259mwnE");
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: rgb(131, 108, 86);
+    text-align: right;
+    padding: 1rem;
+    width: 100%;
+}
+
+.flex-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin: 0;
+    background-color: rgba(213, 221, 213, 0.2);
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(15, 97, 204, 0.5);
+    padding: 1em;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: rgb(243, 180, 122);
+}
+
+.flex-container-main {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.flex-container-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgb(213, 221, 213, 0.8);
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#logo {
+    max-height: 80px;
+}
+
+input {
+    padding: 0.3em;
+    border-radius: 8px;
+    border-color: lightgray;
+    width: 250px;
+}
+
+#boton-envio {
+    font-size: 1em;
+    background-color: rgb(112, 189, 112);
+    color: white;
+    padding: 0.8em;
+    border-style: none;
+    border-radius: 8px;
+}
+
+#boton-envio:hover {
+    background-color: rgb(228, 152, 82);
+    color: white;
+}
+
+#recordarContraseña {
+    width: 20px;
+}
+
+.flex-container-text {
+    margin-left: 20px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    padding: 1em;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    width: 180px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    border-radius: 36% 64% 55% 45% / 49% 36% 64% 51%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgb(58, 144, 180);
+    background: linear-gradient(90deg, rgba(58, 144, 180, 1) 0%, rgb(248, 234, 104) 50%, rgba(252, 176, 69, 1) 100%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flex-container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.polaroid {
+    background-color: white;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.polaroid:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.polaroid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
